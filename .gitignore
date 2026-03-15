@@ -1,0 +1,12 @@
+antigravity_chrome_profile/
+playwright-report/
+test-results/
+blob-report/
+node_modules/
+.cache/
+__pycache__/
+.venv/
+venv/
+UT_Book_*.json
+*.log
+Thumbs.db
