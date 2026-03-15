@@ -2,8 +2,6 @@
 
 Konversi buku UT berbasis Kotobee menjadi file JSON, lalu bersihkan hasil ekstraksinya agar lebih rapi dan siap dipakai untuk pencarian, analisis, atau pipeline AI/RAG.
 
-> Repo ini difokuskan pada skrip inti. File hasil ekstraksi, cache browser, dan profil Playwright sengaja tidak ikut dipublikasikan agar repository tetap ringan dan rapi.
-
 ## Ringkasan
 
 Project ini memiliki dua langkah utama:
@@ -128,29 +126,6 @@ Contoh struktur hasil ekstraksi:
   ]
 }
 ```
-
-## Catatan Penting
-
-- Folder `antigravity_chrome_profile/` berisi data sesi lokal, cache, history, dan data browser lain. Folder ini tidak cocok untuk dipublikasikan ke GitHub.
-- File `UT_Book_*.json` adalah hasil generate. Secara default file ini tidak ikut masuk Git agar repo tetap ringan.
-- Skrip ini bergantung pada tampilan reader yang aktif. Jika struktur halaman UT berubah, selector mungkin perlu diperbarui.
-- Beberapa halaman dapat terdeteksi kosong bila isinya berupa gambar, video, atau elemen yang tidak memiliki teks yang bisa diambil.
-
-## Untuk Publikasi Repo
-
-Agar repo tetap bersih dan nyaman dipakai orang lain, yang sebaiknya dipublikasikan adalah:
-
-- skrip Python
-- file batch
-- `.gitignore`
-- dokumentasi
-
-Yang sebaiknya tetap lokal:
-
-- profil browser Playwright
-- cache
-- report hasil testing
-- file output JSON besar, kecuali memang ingin dijadikan contoh
 
 ## Cocok Untuk
 
